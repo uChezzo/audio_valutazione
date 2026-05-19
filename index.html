@@ -5,20 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Valutazione audio</title>
 <style>
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     max-width: 640px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 16px;
     color: #222;
     background: #f7f7f8;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .box {
     background: white;
     border-radius: 12px;
-    padding: 32px 24px;
+    padding: 24px 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     text-align: center;
+    margin-top: 16px;
   }
   h1 {
     font-size: 22px;
@@ -32,44 +36,45 @@
     padding: 14px 28px;
     border-radius: 8px;
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 12px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
   }
   .hint {
     font-size: 13px;
     color: #666;
-    margin-top: 24px;
+    margin-top: 20px;
   }
   .banner {
     background: #fff8dc;
     border: 1px solid #f0d878;
     border-radius: 12px;
-    padding: 24px 20px;
-    margin-top: 24px;
+    padding: 20px 16px;
+    margin-top: 20px;
   }
   .banner h2 {
-    font-size: 18px;
+    font-size: 17px;
     margin: 0 0 8px 0;
     color: #8a6d00;
+    text-align: center;
   }
   .banner p {
     margin: 8px 0;
     color: #444;
   }
   .banner ol {
-    text-align: left;
-    margin: 16px 0;
-    padding-left: 24px;
+    margin: 12px 0;
+    padding-left: 22px;
     line-height: 1.7;
     color: #333;
   }
   .banner ol li {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
   .step-section {
-    margin-top: 20px;
-    padding-top: 16px;
+    margin-top: 16px;
+    padding-top: 12px;
     border-top: 1px dashed #d8c060;
   }
   .step-section h3 {
@@ -77,11 +82,29 @@
     color: #8a6d00;
     margin: 0 0 8px 0;
   }
-  .quote {
-    font-style: italic;
-    background: #fffceb;
+  .highlight {
+    background: #ffe9a8;
     padding: 2px 6px;
     border-radius: 4px;
+    font-weight: 600;
+  }
+  .gattino-box {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed #d8c060;
+  }
+  .gattino-box img {
+    max-width: 100%;
+    width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  .gattino-box p {
+    font-size: 14px;
+    color: #8a6d00;
+    margin-top: 10px;
+    font-style: italic;
   }
 </style>
 </head>
@@ -96,23 +119,30 @@
 
 <div class="banner">
   <h2>⚠️ SE NON TI SI APRE</h2>
-  <p>perché Drive ti dice <strong>"Impossibile aprire il file in questo momento"</strong>, allora prova a fare questo:</p>
+  <p>perché Drive ti dice <strong>"Impossibile aprire il file in questo momento"</strong>, allora fai questi semplici passi:</p>
 
   <div class="step-section">
-    <h3>📱 Passi per disattivare Google Drive temporaneamente</h3>
+    <h3>📱 Apri il link nel browser invece che in Drive</h3>
     <ol>
       <li>Apri <strong>Impostazioni</strong> del telefono.</li>
       <li>Vai su <strong>App</strong> (o "Applicazioni").</li>
       <li>Trova e tocca <strong>Google Drive</strong> nella lista.</li>
-      <li>Tocca <strong>Apri per impostazione predefinita</strong> (oppure "Apri link supportati" su alcuni telefoni).</li>
-      <li>Tocca <strong>Cancella valori predefiniti</strong>, oppure disattiva l'interruttore <span class="quote">Apri link supportati</span>.</li>
-      <li>Torna indietro e ricarica il link della valutazione. Se Android ti chiede con quale app aprirlo, scegli <strong>Chrome</strong> (o il tuo browser preferito) e tocca <strong>Solo una volta</strong>.</li>
+      <li>Tocca <strong>Apri per impostazione predefinita</strong>.</li>
+      <li>Seleziona <span class="highlight">nel browser</span> al posto di "All'interno dell'app".</li>
+      <li>Torna indietro e riapri il link della valutazione: ora si aprirà in Chrome ✅</li>
     </ol>
   </div>
 
   <div class="step-section">
-    <h3>🔄 Come ripristinare Google Drive dopo aver finito</h3>
-    <ol>
-      <li>Apri di nuovo <strong>Impostazioni → App → Google Drive</strong>.</li>
-      <li>Tocca <strong>Apri per impostazione predefinita</strong>.</li>
-      <li>Riattiva
+    <h3>🔄 Quando hai finito</h3>
+    <p>Se vuoi ripristinare Drive come prima, torna in <strong>Impostazioni → App → Google Drive → Apri per impostazione predefinita</strong> e riseleziona <strong>"All'interno dell'app"</strong>.</p>
+  </div>
+
+  <div class="gattino-box">
+    <img src="https://media.tenor.com/Iy1U8GfTjOcAAAAj/cat-hug.gif" alt="Gattino che abbraccia">
+    <p>Grazie per la pazienza! 🐾</p>
+  </div>
+</div>
+
+</body>
+</html>
