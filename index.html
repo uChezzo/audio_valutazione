@@ -34,7 +34,15 @@
   <div class="box">
     <h1>Valutazione audio</h1>
     <p>Grazie per partecipare! Clicca il pulsante qui sotto per iniziare.</p>
-    <a href="https://script.google.com/macros/s/AKfycbwQaA7BPtZazOlxhUwr9XhBM8-Eui-vvA5cQxMbOtsUKyEeyoCs1ZPgc-Bwba586dPr/exec">Inizia la valutazione</a>
+    <button onclick="apri()" style="background:#4a7cff;color:white;border:none;padding:14px 28px;border-radius:8px;font-size:16px;margin-top:16px;cursor:pointer;">Inizia la valutazione</button>
+
+<script>
+function apri() {
+  const url = 'https://script.google.com/macros/s/INCOLLA_QUI_IL_TUO_URL/exec';
+  window.open(url, '_blank');
+}
+</script>
+  
     <p style="margin-top: 24px; font-size: 13px; color: #666;">Si consiglia l'uso di cuffie o auricolari.</p>
   </div>
 </body>
