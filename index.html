@@ -7,18 +7,24 @@
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    max-width: 600px;
-    margin: 60px auto;
+    max-width: 640px;
+    margin: 40px auto;
     padding: 20px;
-    text-align: center;
     color: #222;
+    background: #f7f7f8;
   }
   .box {
-    background: #f7f7f8;
+    background: white;
     border-radius: 12px;
-    padding: 40px 20px;
+    padding: 32px 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    text-align: center;
   }
-  a {
+  h1 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+  .start-btn {
     display: inline-block;
     background: #4a7cff;
     color: white;
@@ -27,17 +33,86 @@
     border-radius: 8px;
     font-size: 16px;
     margin-top: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .hint {
+    font-size: 13px;
+    color: #666;
+    margin-top: 24px;
+  }
+  .banner {
+    background: #fff8dc;
+    border: 1px solid #f0d878;
+    border-radius: 12px;
+    padding: 24px 20px;
+    margin-top: 24px;
+  }
+  .banner h2 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    color: #8a6d00;
+  }
+  .banner p {
+    margin: 8px 0;
+    color: #444;
+  }
+  .banner ol {
+    text-align: left;
+    margin: 16px 0;
+    padding-left: 24px;
+    line-height: 1.7;
+    color: #333;
+  }
+  .banner ol li {
+    margin-bottom: 6px;
+  }
+  .step-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed #d8c060;
+  }
+  .step-section h3 {
+    font-size: 15px;
+    color: #8a6d00;
+    margin: 0 0 8px 0;
+  }
+  .quote {
+    font-style: italic;
+    background: #fffceb;
+    padding: 2px 6px;
+    border-radius: 4px;
   }
 </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Valutazione audio</h1>
-    <p>Grazie per partecipare! Clicca il pulsante qui sotto per iniziare.</p>
-    <a href="https://script.google.com/macros/s/INCOLLA_QUI_IL_TUO_URL/exec">Inizia la valutazione</a>
-</script>
-  
-    <p style="margin-top: 24px; font-size: 13px; color: #666;">Si consiglia l'uso di cuffie o auricolari.</p>
+
+<div class="box">
+  <h1>Valutazione audio</h1>
+  <p>Grazie per partecipare! Clicca il pulsante qui sotto per iniziare.</p>
+  <a class="start-btn" href="https://script.google.com/macros/s/AKfycbwQaA7BPtZazOlxhUwr9XhBM8-Eui-vvA5cQxMbOtsUKyEeyoCs1ZPgc-Bwba586dPr/exec">Inizia la valutazione</a>
+  <p class="hint">Si consiglia l'uso di cuffie o auricolari.</p>
+</div>
+
+<div class="banner">
+  <h2>⚠️ SE NON TI SI APRE</h2>
+  <p>perché Drive ti dice <strong>"Impossibile aprire il file in questo momento"</strong>, allora prova a fare questo:</p>
+
+  <div class="step-section">
+    <h3>📱 Passi per disattivare Google Drive temporaneamente</h3>
+    <ol>
+      <li>Apri <strong>Impostazioni</strong> del telefono.</li>
+      <li>Vai su <strong>App</strong> (o "Applicazioni").</li>
+      <li>Trova e tocca <strong>Google Drive</strong> nella lista.</li>
+      <li>Tocca <strong>Apri per impostazione predefinita</strong> (oppure "Apri link supportati" su alcuni telefoni).</li>
+      <li>Tocca <strong>Cancella valori predefiniti</strong>, oppure disattiva l'interruttore <span class="quote">Apri link supportati</span>.</li>
+      <li>Torna indietro e ricarica il link della valutazione. Se Android ti chiede con quale app aprirlo, scegli <strong>Chrome</strong> (o il tuo browser preferito) e tocca <strong>Solo una volta</strong>.</li>
+    </ol>
   </div>
-</body>
-</html>
+
+  <div class="step-section">
+    <h3>🔄 Come ripristinare Google Drive dopo aver finito</h3>
+    <ol>
+      <li>Apri di nuovo <strong>Impostazioni → App → Google Drive</strong>.</li>
+      <li>Tocca <strong>Apri per impostazione predefinita</strong>.</li>
+      <li>Riattiva
